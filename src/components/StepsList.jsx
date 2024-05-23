@@ -5,7 +5,7 @@ function StepsList({steps, setCheckboxes}) {
   return (
     <div>
       {steps.length > 0 &&
-        <div>
+        <div className="steps-wrapper">
           <h3 className="category-title">Категория Симптомов</h3>
           <div className="steps-block">
             {steps.map(step =>

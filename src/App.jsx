@@ -24,7 +24,7 @@ function App() {
 
   return (
     <div>
-      <CategoryList categories={categories} setSteps={setSteps}/>
+      <CategoryList categories={categories} setSteps={setSteps} setAnalyses={setAnalyses} setCheckboxes={setCheckboxes}/>
       <StepsList steps={steps} setCheckboxes={setCheckboxes}/>
       <Result checkboxes={checkboxes} setAnalyses={setAnalyses}/>
       <AnalysesList analyses={analyses}/>

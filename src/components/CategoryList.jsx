@@ -1,10 +1,12 @@
-function CategoryList({categories, setSteps}) {
+function CategoryList({categories, setSteps, setAnalyses, setCheckboxes}) {
 
   async function openCategory(id) {
     const response = await fetch(`https://it-gen.altek.uz/api/v1/directory/category/${id}/`)
     if (response.ok) {
       const data = await response.json()
       setSteps(data.results)
+      setAnalyses([])
+      setCheckboxes([])
     }
   }
 
