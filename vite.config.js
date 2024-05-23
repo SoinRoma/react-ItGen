@@ -7,5 +7,5 @@ export default defineConfig({
   define: {
     "process.env.IS_PREACT": JSON.stringify("true"),
   },
-  base: '/react-telegrambot/'
+  base: '/react-ItGen/'
 })
