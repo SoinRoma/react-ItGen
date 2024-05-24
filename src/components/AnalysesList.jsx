@@ -8,8 +8,6 @@ function AnalysesList({analyses}) {
             {analyses.map(analysis =>
               <div key={analysis.id} className="analysis-card">
                 <h3><strong>Наименование: </strong>{analysis.name}</h3>
-                <p><strong>Цена: </strong>{analysis.price}</p>
-                <p><strong>Количество дней: </strong>{analysis.days_count}</p>
               </div>
             )}
           </div>
